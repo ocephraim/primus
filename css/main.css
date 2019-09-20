@@ -242,6 +242,7 @@ i {
     padding: 96px 0;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(0deg, rgba(0, 54, 97, 0.9), rgba(0, 54, 97, 0.9)), url(../assets/productsBg.png) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .products h3 {
     text-align: center;

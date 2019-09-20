@@ -16,7 +16,7 @@ body {
 /* hero & header styles */
 .hero {
     background: linear-gradient(0deg, #828282, #828282), url(../assets/heroBg.jpg) no-repeat;
-    background-blend-mode: multiply;
+    background-blend-mode: multiply, normal;
     height: 100vh;
     background-size: cover;
     color: #FFFFFF;
@@ -78,6 +78,7 @@ form p {
 .form-control {
     display: inline;
     max-width: 200px;
+    height: 40px;
     margin-right: 16px;
     border-radius: 0;
     transition: all 0.4s ease-out;
@@ -287,4 +288,89 @@ ul li {
 ul a:hover {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+/* about styles */
+.about {
+    padding: 104px 0;
+    background: #FAFAFA;
+}
+.aboutContent {
+    font-size: 23px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-gap: 10%;
+    justify-items: center;
+}
+.values {
+    font-family: 'Proza Libre', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+.val {
+    display: flex;
+    align-items: baseline;
+}
+.val img {
+    margin-right: 16px;
+}
+.whoWeAre {
+    color: #919191;
+    margin: 0;
+}
+
+/* blog styles */
+.blog {
+    padding: 136px 0;
+}
+.blogContent {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+}
+.post {
+    max-width: 90%;
+}
+.postTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.postTitle img {
+    width: 96px;
+    margin-right: 12px;
+}
+.postTitle span {
+    font-size: 23px;
+    line-height: 1.1;
+}
+.postBody {
+    font-size: 16px;
+    color: #919191;
+    margin-bottom: 32px;
+}
+.blogContent a {
+    justify-content: start;
+    margin: 0;
+}
+.vl {
+    background: #BBBBBB;
+}
+.blogContent div:nth-child(3) {
+    justify-self: end;
+}
+
+/* subscribe */
+.subscribe {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), linear-gradient(90deg, #D3ECFF 0%, rgba(211, 236, 255, 0.4) 58.92%), url(../assets/subscribe.png);
+    padding: 104px 0;
+    text-align: center;
+}
+.subForm h3 {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 0 auto 64px;
+}
+.subForm input {
+    max-width: 300px;
 }

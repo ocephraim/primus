@@ -375,3 +375,22 @@ ul a:hover {
 .subForm input {
     max-width: 300px;
 }
+
+/* footer styles */
+footer {
+    padding: 32px 0 64px;
+    font-size: 18px;
+    color: #919191;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.socials a {
+    margin-left: 40px;
+}
+.socials img {
+    height: 48px;
+}
+

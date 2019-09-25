@@ -11,6 +11,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     max-width: 1440px;
     color: #151515;
+    margin: 0 auto;
 }
 
 /* hero & header styles */
@@ -55,6 +56,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    position: relative;
 }
 .heroContent h1 {
     font-family: 'Proza Libre', sans-serif;
@@ -76,8 +78,9 @@ form p {
     margin-bottom: 24px;
 }
 .form-control {
-    display: inline;
+    display: inline-block;
     max-width: 200px;
+    font-size: 14px;
     height: 40px;
     margin-right: 16px;
     border-radius: 0;
@@ -118,10 +121,76 @@ form p {
     color: #BBBBBB;
     text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.95);  
     text-align: left;
+    margin-left: 10px;
 }
 
 .down {
     cursor:  pointer;
+}
+
+@media (max-width: 998px) {
+    .heroContent h1 {
+        font-size: 36px;
+    }
+    form p {
+        font-size: 18px;
+    }
+    .form-control {
+        height: 30px;
+        margin-right: 12px;
+        font-size: 12px;
+    }
+    .propertyForm {
+        margin-bottom: 16px;
+    }
+    .btn {
+        height: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .navLinks a {
+        padding: 14px;
+        border: 0.5px solid #BBBBBB;
+        border-radius: 50%;
+    }
+    .navLinks img {
+        margin: 0;
+    }
+    .mail span, .phone span {
+        display: none;
+    }
+    .mail {
+        margin: 0 32px;
+    }
+    .heroContent h1 {
+        margin-top: -85%;
+        font-size: 32px;
+    }
+    .down {
+        display: none;
+    }
+    .findProperty {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 42%;
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23f7f7f7' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); 
+        padding: 48px 24px;
+        border-radius: 3px;
+        color: #151515;
+        text-align: left;
+    }
+    .findProperty .form-control {
+        display: block;
+        margin: 0 auto 16px;
+        max-width: 100%;
+    }
+    .form-text {
+        text-shadow: none;
+        margin-left: 0;
+    }
 }
 
 /* listings styles */
@@ -234,6 +303,24 @@ i {
 .more:hover .moreImg{
     transform: translateX(4px);
 }
+@media (max-width: 998px) {
+    .listings {
+        padding: 96px 0;
+    }
+    .title h3 {
+        font-size: 18px;
+    }
+    .listingsContent h5 {
+        font-size: 16px;
+    }
+    .properties {
+        margin-top: 32px;
+        grid-gap: 56px 5%;
+    }
+    .property .img {
+        height: 200px;
+    }
+}
 
 /* products styles */
 .products {
@@ -253,7 +340,7 @@ i {
 .productsContent {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-gap: 104px;
+    grid-gap: 5%;
     justify-content: center;
     text-transform: capitalize;
     justify-items: center;
@@ -291,6 +378,28 @@ ul a:hover {
     color: #FFFFFF;
 }
 
+@media (max-width: 998px) {
+    .products {
+        padding: 72px 0
+    }
+    .products h3 {
+        font-size: 18px;
+    }
+    .prdtType img{
+        height: 24px;
+        margin-right: 8px;
+    }
+    .prdtType span {
+        font-size: 16px;
+    }
+    ul a {
+        font-size: 14px;
+    }
+    ul li {
+        margin-bottom: 12px;
+    }
+}
+
 /* about styles */
 .about {
     padding: 104px 0;
@@ -319,6 +428,19 @@ ul a:hover {
 .whoWeAre {
     color: #919191;
     margin: 0;
+}
+
+@media (max-width: 998px) {
+    .about {
+        padding: 96px 0;
+    }
+    .aboutContent {
+        font-size: 18px;
+        grid-template-columns: 25% 65%;
+    }
+    .val img {
+        margin-right: 12px;
+    }
 }
 
 /* blog styles */
@@ -354,6 +476,23 @@ ul a:hover {
     justify-content: start;
     margin: 0;
 }
+@media (max-width: 998px) {
+    .blog {
+        padding: 96px 0;
+    }
+    .postTitle img {
+        width: 72px;
+    }
+    .postTitle span {
+        font-size: 18px;
+        line-height: 1.3;
+        font-weight: 600;
+    }
+    .postbody {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+}
 .vl {
     background: #BBBBBB;
 }
@@ -363,7 +502,7 @@ ul a:hover {
 
 /* subscribe */
 .subscribe {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), linear-gradient(90deg, #D3ECFF 0%, rgba(211, 236, 255, 0.4) 58.92%), url(../assets/subscribe.png);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%), linear-gradient(90deg, #D3ECFF 0%, rgba(211, 236, 255, 0.4) 58.92%), url(../assets/subscribe.png) no-repeat;
     padding: 104px 0;
     text-align: center;
 }
@@ -374,6 +513,15 @@ ul a:hover {
 }
 .subForm input {
     max-width: 300px;
+}
+@media (max-width: 998px) {
+    .subscribe {
+        padding: 96px 0;
+    }
+    .subForm h3 {
+        font-size: 18px;
+        max-width: 500px;
+    }
 }
 
 /* footer styles */
@@ -392,4 +540,17 @@ footer .container {
 }
 .socials img {
     height: 48px;
+}
+
+@media (max-width: 998px) {
+    footer {
+        padding: 16px 0 32px;
+        font-size: 16px;
+    }
+    .socials a {
+        margin-left: 32px;
+    }
+    .socials img {
+        height: 32px;
+    }
 }

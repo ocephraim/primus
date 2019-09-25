@@ -142,9 +142,6 @@ form p {
     .propertyForm {
         margin-bottom: 16px;
     }
-    .btn {
-        height: 30px;
-    }
 }
 @media (max-width: 767px) {
     .heroContent {
@@ -444,6 +441,24 @@ ul a:hover {
         margin-right: 12px;
     }
 }
+@media (max-width: 767px) {
+    .aboutContent {
+        font-size: 16px;
+        grid-template-columns: 1fr;
+    }
+    .values {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;    
+    }
+    .val {
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+    .val img {
+        margin-bottom: 8px;
+    }
+}
 
 /* blog styles */
 .blog {
@@ -478,6 +493,12 @@ ul a:hover {
     justify-content: start;
     margin: 0;
 }
+.vl {
+    background: #BBBBBB;
+}
+.blogContent div:nth-child(3) {
+    justify-self: end;
+}
 @media (max-width: 998px) {
     .blog {
         padding: 96px 0;
@@ -495,11 +516,16 @@ ul a:hover {
         margin-bottom: 24px;
     }
 }
-.vl {
-    background: #BBBBBB;
-}
-.blogContent div:nth-child(3) {
-    justify-self: end;
+@media (max-width: 767px) {
+    .blogContent {
+        grid-template-columns: 100%;
+    }
+    .blogContent div:nth-child(3), .vl {
+        display: none;
+    }
+    .post {
+        max-width: 100%;
+    }
 }
 
 /* subscribe */
@@ -525,7 +551,17 @@ ul a:hover {
         max-width: 500px;
     }
 }
-
+@media (max-width: 767px) {
+    .subscribe {
+        padding: 64px 0;
+    }
+    .subForm input {
+        margin-bottom: 16px;
+    }
+    .subForm button {
+        max-width: 300px;
+    }
+}
 /* footer styles */
 footer {
     padding: 32px 0 64px;

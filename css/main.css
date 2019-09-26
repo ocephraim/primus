@@ -430,6 +430,16 @@ ul a:hover {
     .prdtType {
         margin-bottom: 16px;
     }
+    .prdtType img{
+        height: 32px;
+        margin-right: 8px;
+    }
+    .prdtType span {
+        font-size: 18px;
+    }
+    ul a {
+        font-size: 16px;
+    }
 }
 
 /* about styles */

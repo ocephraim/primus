@@ -320,6 +320,30 @@ i {
         height: 200px;
     }
 }
+@media (max-width: 767px) {
+    .listings {
+        padding: 144px 0 64px;
+    }
+    .title {
+        margin-bottom: 48px;
+    }
+    .properties {
+        grid-template-columns: 45% 45%;
+        grid-gap: 48px 10%;
+    }
+    .facilities, .price, .type {
+        font-size: 12px;
+    }
+    .name, .address {
+        font-size: 14px;
+    }
+    .bed {
+        margin-right: 8px;
+    }
+    i {
+        margin-left: 2px;
+    }
+}
 
 /* products styles */
 .products {
@@ -379,7 +403,7 @@ ul a:hover {
 
 @media (max-width: 998px) {
     .products {
-        padding: 72px 0
+        padding: 72px 0;
     }
     .products h3 {
         font-size: 18px;
@@ -396,6 +420,15 @@ ul a:hover {
     }
     ul li {
         margin-bottom: 12px;
+    }
+}
+@media (max-width: 767px) {
+    .productsContent {
+        grid-template-columns: 80%;
+        justify-content: left;
+    }
+    .prdtType {
+        margin-bottom: 16px;
     }
 }
 

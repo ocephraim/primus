@@ -431,9 +431,9 @@ ul a:hover {
         /* justify-items: left; */
     }
     .prdtType {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
     }
-    /* .prdtType img{
+    .prdtType img{
         height: 32px;
         margin-right: 8px;
     }
@@ -442,7 +442,10 @@ ul a:hover {
     }
     ul a {
         font-size: 16px;
-    } */
+    }
+    ul li {
+        margin-bottom: 16px;
+    }
 }
 
 /* about styles */

@@ -423,9 +423,12 @@ ul a:hover {
     }
 }
 @media (max-width: 767px) {
+    .products h3 {
+        font-size: 23px;
+    }
     .productsContent {
-        grid-template-columns: 80%;
-        justify-content: left;
+        grid-template-columns: 90%;
+        justify-items: left;
     }
     .prdtType {
         margin-bottom: 16px;

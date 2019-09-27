@@ -426,7 +426,7 @@ ul a:hover {
     }
     .productsContent {
         grid-template-columns: 90%;
-        /* justify-items: left; */
+        justify-items: left;
     }
     .prdtType {
         margin-bottom: 24px;

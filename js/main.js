@@ -23,6 +23,4 @@ const createListings = function(listing) {
     }
 }
 
-ppty.forEach (function(e) {
-    this.append(createListings(data));
-});
+ppty.forEach (this.append(createListings(data)));
